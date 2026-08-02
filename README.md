@@ -67,7 +67,7 @@ E não acusou nada no edital limpo, porque conferência que dá falso alarme é 
 ## Como rodar
 
 ```bash
-git clone https://github.com/Lucasnevesads/leitor-de-editais
+git clone https://github.com/lucasnevesbr/leitor-de-editais
 cd leitor-de-editais
 pip install -r requirements.txt
 
@@ -134,7 +134,7 @@ O structured outputs (`output_config.format` com JSON schema) elimina o JSON mal
 
 ## 🧪 Sobre os dados
 
-Este projeto faz parte da trilha da **Norte Garantia**, uma corretora de seguro garantia **fictícia**. Aqui os dados não vêm da [base sintética](https://github.com/Lucasnevesads/base-sintetica-seguros): são **três editais fictícios**, escritos seguindo a estrutura da Lei 14.133/2021 (que é pública), com órgãos inventados — Serra do Lume e Porto do Mangal não existem. Dois trazem defeitos plantados de propósito, com gabarito em `editais/gabarito/`.
+Este projeto faz parte da trilha da **Norte Garantia**, uma corretora de seguro garantia **fictícia**. Aqui os dados não vêm da [base sintética](https://github.com/lucasnevesbr/base-sintetica-seguros): são **três editais fictícios**, escritos seguindo a estrutura da Lei 14.133/2021 (que é pública), com órgãos inventados — Serra do Lume e Porto do Mangal não existem. Dois trazem defeitos plantados de propósito, com gabarito em `editais/gabarito/`.
 
 Nenhum edital real, nenhum órgão real e nenhum dado de empresa real é usado, em nenhuma etapa. Chave de API nunca entra no repositório.
 
