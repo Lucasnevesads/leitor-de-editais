@@ -1,4 +1,4 @@
-# leitor-de-editais
+﻿# leitor-de-editais
 
 > **Lê um edital de licitação e devolve o parecer que a corretora precisa:** o que o edital exige de garantia, qual número não bate e, tão importante quanto, o que o edital **não diz**.
 >
@@ -54,7 +54,7 @@ Quatro decisões que não eram óbvias:
 extrator por regras x gabarito     39/39 campos (status e valor)
 defeitos plantados pegos           2 de 2, com a conta exposta
 falso alarme no edital limpo       zero
-testes                             29, sem chamar API nenhuma
+testes                             30, sem chamar API nenhuma
 ```
 
 A conferência pegou os dois defeitos plantados nos editais fictícios:
@@ -73,7 +73,7 @@ pip install -r requirements.txt
 
 python src/ler.py editais/edital_002.txt      # o parecer da imagem acima
 python src/medir.py                           # os 39/39 contra o gabarito
-python -m unittest discover -p "teste_*.py"   # os 29 testes
+python -m unittest discover -p "teste_*.py"   # os 30 testes
 ```
 
 O extrator por modelo é opcional e desligado por padrão:
