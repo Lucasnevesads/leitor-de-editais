@@ -120,6 +120,15 @@ def _garantia_contratual(texto):
     if secao is None:
         tres = campo(NAO_ENCONTRADO)
         return tres, dict(tres), dict(tres), dict(tres)
+
+    # Dispensa declarada vale para a seção inteira: sem garantia não há
+    # percentual, valor, prazo nem modalidade a discutir.
+    m = re.search(r"[Nn]ão será exigida garantia", secao)
+    if m:
+        dispensada = campo(AUSENTE_DECLARADO, trecho=_frase_de(secao, m))
+        return (dict(dispensada), dict(dispensada), dict(dispensada),
+                dict(dispensada))
+
     percentual, valor = _garantia(secao)
 
     # A prova do "sim" é a menção; a prova do "nao" é a frase que lista

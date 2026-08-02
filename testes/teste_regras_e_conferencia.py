@@ -84,6 +84,28 @@ class TesteConferencia(unittest.TestCase):
         self.assertEqual(len(achados), 1)
         self.assertEqual(achados[0]["campo"], "data_sessao")
 
+    def test_garantia_contratual_dispensada_e_ausencia_declarada(self):
+        """Dispensa declarada não é silêncio: vale para a seção inteira."""
+        texto = (
+            "MUNICÍPIO FICTÍCIO\n\n"
+            "1. DO OBJETO\n"
+            "1.1. A presente licitação tem por objeto a compra de mesas.\n"
+            "2. DA GARANTIA CONTRATUAL\n"
+            "2.1. Não será exigida garantia contratual nesta contratação.\n"
+            "3. DA VIGÊNCIA\n"
+            "3.1. O contrato terá vigência de 12 (doze) meses.\n"
+        )
+        extracao = extrator_regras.extrair(texto)
+        for nome in (
+            "garantia_contratual_percentual", "garantia_contratual_valor",
+            "prazo_apresentacao_garantia_dias", "seguro_garantia_aceito",
+        ):
+            with self.subTest(campo=nome):
+                item = extracao[nome]
+                self.assertEqual(item["status"], contrato.AUSENTE_DECLARADO)
+                self.assertIn("Não será exigida", item["trecho"])
+        self.assertEqual(contrato.validar(extracao, texto), [])
+
     def test_percentual_acima_do_teto_legal(self):
         """2% de garantia de proposta viola o art. 58, § 1º (teto de 1%)."""
         texto = "qualquer coisa"
