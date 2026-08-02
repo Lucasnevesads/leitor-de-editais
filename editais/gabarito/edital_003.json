@@ -1,0 +1,20 @@
+{
+  "campos": {
+    "orgao": {"status": "encontrado", "valor": "AUTARQUIA MUNICIPAL DE SANEAMENTO DE SERRA DO LUME"},
+    "numero_edital": {"status": "encontrado", "valor": "007/2026"},
+    "modalidade": {"status": "encontrado", "valor": "CONCORRÊNCIA ELETRÔNICA"},
+    "objeto": {"status": "encontrado", "valor": "contratação de empresa especializada para a ampliação da rede de abastecimento de água dos bairros Jacamim e Boa Espera"},
+    "valor_estimado": {"status": "encontrado", "valor": "R$ 2.150.000,00"},
+    "data_sessao": {"status": "encontrado", "valor": "31/06/2026"},
+    "garantia_proposta_percentual": {"status": "nao_encontrado", "valor": null},
+    "garantia_proposta_valor": {"status": "nao_encontrado", "valor": null},
+    "garantia_contratual_percentual": {"status": "encontrado", "valor": "5%"},
+    "garantia_contratual_valor": {"status": "encontrado", "valor": "R$ 107.500,00"},
+    "prazo_apresentacao_garantia_dias": {"status": "nao_encontrado", "valor": null},
+    "prazo_vigencia_meses": {"status": "encontrado", "valor": "18"},
+    "seguro_garantia_aceito": {"status": "encontrado", "valor": "sim"}
+  },
+  "achados_esperados": [
+    {"campo": "data_sessao", "gravidade": "erro"}
+  ]
+}

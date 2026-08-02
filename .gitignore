@@ -1,0 +1,29 @@
+# ---- Dado nunca sobe ----
+# Os editais deste repo são fictícios e versionados de propósito.
+# Qualquer edital real que alguém coloque aqui para testar fica fora.
+editais/reais/
+*.pdf
+
+# ---- Segredo nunca sobe ----
+.env
+.env.*
+*.pem
+*.key
+credenciais*
+segredos*
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# ---- Sistema e editor ----
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

@@ -1,0 +1,18 @@
+{
+  "campos": {
+    "orgao": {"status": "encontrado", "valor": "MUNICÍPIO DE SERRA DO LUME"},
+    "numero_edital": {"status": "encontrado", "valor": "012/2026"},
+    "modalidade": {"status": "encontrado", "valor": "CONCORRÊNCIA ELETRÔNICA"},
+    "objeto": {"status": "encontrado", "valor": "contratação de empresa especializada para a construção de escola municipal de 8 (oito) salas de aula no bairro Alto da Serra"},
+    "valor_estimado": {"status": "encontrado", "valor": "R$ 4.280.000,00"},
+    "data_sessao": {"status": "encontrado", "valor": "15/09/2026"},
+    "garantia_proposta_percentual": {"status": "encontrado", "valor": "1%"},
+    "garantia_proposta_valor": {"status": "encontrado", "valor": "R$ 42.800,00"},
+    "garantia_contratual_percentual": {"status": "encontrado", "valor": "5%"},
+    "garantia_contratual_valor": {"status": "encontrado", "valor": "R$ 214.000,00"},
+    "prazo_apresentacao_garantia_dias": {"status": "encontrado", "valor": "10"},
+    "prazo_vigencia_meses": {"status": "encontrado", "valor": "14"},
+    "seguro_garantia_aceito": {"status": "encontrado", "valor": "sim"}
+  },
+  "achados_esperados": []
+}

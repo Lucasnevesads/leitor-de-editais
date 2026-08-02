@@ -1,0 +1,2 @@
+# O caminho padrão (extrator por regras) só precisa disto.
+pyyaml==6.0.2

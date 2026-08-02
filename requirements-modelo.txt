@@ -1,0 +1,3 @@
+# Só para o extrator por modelo (--extrator modelo), que é opcional e
+# exige ANTHROPIC_API_KEY no ambiente. O caminho padrão não usa isto.
+anthropic>=0.40

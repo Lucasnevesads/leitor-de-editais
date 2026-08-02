@@ -1,0 +1,20 @@
+{
+  "campos": {
+    "orgao": {"status": "encontrado", "valor": "MUNICÍPIO DE PORTO DO MANGAL"},
+    "numero_edital": {"status": "encontrado", "valor": "034/2026"},
+    "modalidade": {"status": "encontrado", "valor": "PREGÃO ELETRÔNICO"},
+    "objeto": {"status": "encontrado", "valor": "contratação de empresa para a prestação de serviços contínuos de limpeza e conservação predial nas unidades administrativas do Município"},
+    "valor_estimado": {"status": "encontrado", "valor": "R$ 1.847.520,00"},
+    "data_sessao": {"status": "encontrado", "valor": "28/08/2026"},
+    "garantia_proposta_percentual": {"status": "ausente_declarado", "valor": null},
+    "garantia_proposta_valor": {"status": "ausente_declarado", "valor": null},
+    "garantia_contratual_percentual": {"status": "encontrado", "valor": "5%"},
+    "garantia_contratual_valor": {"status": "encontrado", "valor": "R$ 97.376,00"},
+    "prazo_apresentacao_garantia_dias": {"status": "encontrado", "valor": "5"},
+    "prazo_vigencia_meses": {"status": "encontrado", "valor": "12"},
+    "seguro_garantia_aceito": {"status": "encontrado", "valor": "sim"}
+  },
+  "achados_esperados": [
+    {"campo": "garantia_contratual_valor", "gravidade": "erro"}
+  ]
+}

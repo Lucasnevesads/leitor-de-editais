@@ -1,0 +1,3 @@
+# Só para gerar as imagens do README (docs/gerar_grafico.py).
+# O produto não depende disto.
+matplotlib==3.10.6
